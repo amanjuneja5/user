@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: user
+  description:  User service
+  annotations:
+    backstage.io/kubernetes-label-selector: 'name=user'
+    github.com/project-slug: 'amanjuneja5/user'
+  tags:
+    - spring-boot
+spec:
+  type: service
+  lifecycle:  production
+  owner: Infracloud
